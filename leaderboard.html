@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over - Fruit Ninja</title>
+    <link rel="stylesheet" href="leaderboard.css">
+</head>
+<body>
+    <div class="game-over-container">
+        <div class="game-over-sprite">
+            <img src="game-over.png" alt="Game Over">
+        </div>
+        <div class="scoreboard">
+            <div class="score-section">
+                <h2>Your Score: <span id="finalScore">0</span></h2>
+                <h3>Time Taken: <span id="finalTime">00:00</span></h3>
+            </div>
+            <div class="leaderboard-section">
+                <h2>Leaderboard</h2>
+                <ul id="leaderboard">
+                    <li>1. Player1 - 100</li>
+                    <li>2. Player2 - 90</li>
+                    <li>3. Player3 - 80</li>
+                    <li>4. Player4 - 70</li>
+                    <li>5. Player5 - 60</li>
+                </ul>
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="restartButton">Restart Game</button>
+            <button id="quitButton">Quit Game</button>
+        </div>
+    </div>
+    <script src="leaderboard.js"></script>
+</body>
+</html>

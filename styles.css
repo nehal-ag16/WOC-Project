@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gang of Three', cursive, sans-serif; /* Playful font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #706d6a, #000000); /* Fun gradient background */
+    height: 100vh;
+    overflow: hidden;
+}
+
+.game-container {
+    display: flex;
+    width: 50%;
+    height: 50%;
+    background: #3d4cad; /* Light background for contrast */
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(162, 158, 208, 0.5);
+    overflow: hidden; /* Prevent overflow from child elements */
+}
+
+.game-playground {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 255, 187); /* Playful color for the game area */
+    border-radius: 15px;
+    position: relative; /* Needed for absolute positioning of timer and score */
+    overflow: hidden; /* Prevent overflow */
+}
+
+canvas {
+    border: 5px solid #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 100%; /* Make canvas full width */
+    height: 100%; /* Make canvas full height */
+    object-fit: cover; /* Maintain aspect ratio while filling */
+    border-radius: 10px; /* Rounded corners for canvas */
+}
+
+/* Positioning for timer and score */
+#timer {
+    position: absolute; /* Absolute positioning */
+    bottom: 20px; /* Distance from the bottom */
+    left: 20px; /* Distance from the left */
+    font-size: 24px; /* Font size */
+    color: aliceblue; /* Dark text for readability */
+}
+
+#score {
+    position: absolute; /* Absolute positioning */
+    top: 50px; /* Distance from the top */
+    left: 15px; /* Distance from the right */
+    font-size: 24px; /* Font size */
+    color: aliceblue; /* White text for contrast */
+}
+#purple{
+    position: absolute; /* Absolute positioning */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the right */
+    font-size: 24px; /* Font size */
+    color: purple; 
+    
+
+}
+#red{
+    position: absolute; /* Absolute positioning */
+    top: 20px; /* Distance from the top */
+    left: 35px;
+    font-size: 24px; /* Font size */
+    color: red; 
+    }
+
+#yellow{
+    position: absolute; /* Absolute positioning */
+    top: 20px; /* Distance from the top */
+    left: 53px;
+    font-size: 24px; /* Font size */
+    color: yellow; 
+
+}
+#orange{
+    position: absolute; /* Absolute positioning */
+    top: 20px; /* Distance from the top */
+    left: 73px;
+    font-size: 24px; /* Font size */
+    color: orange; 
+
+}
+#green{
+    position: absolute; /* Absolute positioning */
+    top: 20px; /* Distance from the top */
+    left: 81px;
+    font-size: 24px; /* Font size */
+    color: green; 
+
+}
+#gameName{
+     position: absolute;
+    top: 20px;
+    left: 105px;
+    font-size: 24px;
+    color : aliceblue ;
+}
+
+#lives{
+    position: absolute;
+    top: 15px;
+    right:20px;
+    font-size: 24px;
+    color : aliceblue;
+}
+
+/* Additional Styling */
+h2, h3 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+h2 {
+    font-size: 28px;
+    border-bottom: 2px solid #fff; /* Underline for emphasis */
+    padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .game-container {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .game-playground {
+        border-radius: 15px; /* Rounded corners for mobile */
+        height: 400px; /* Fixed height for better mobile layout */
+    }
+}
+#timer, #score {
+    font-weight: bold; /* Make the text bold */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add shadow for better visibility */
+}
